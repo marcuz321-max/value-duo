@@ -1,5 +1,4 @@
-env:
-  ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+
 name: Value Duo - Automatisk analys
 
 on:
@@ -27,8 +26,13 @@ jobs:
         with:
           python-version: "3.11"
 
+      
       - name: Kor ATLAS och QUANT
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python worker.py
+
+      
 
       - name: Publicera analysresultat
         run: |

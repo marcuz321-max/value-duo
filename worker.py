@@ -47,7 +47,8 @@ def run():
         key=lambda x: x.get("ev") or 0,
         reverse=True
     )[:5]
-        # Registrera preliminära kandidater för uppföljning.
+
+    # Registrera preliminära kandidater för uppföljning.
     newly_registered = register_candidates(candidates)
     paper_stats = calculate_roi(load_bets())
 
@@ -144,7 +145,7 @@ def run():
         "results": offers[:100],
         "discussion": discussion,
         "history_count": len(history),
-                "paper_tracking": {
+        "paper_tracking": {
             "new_candidates": newly_registered,
             **paper_stats,
         },

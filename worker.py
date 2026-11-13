@@ -1,35 +1,76 @@
-"""Scheduled offline analysis: licensed/user-supplied CSV only, no unsupported scraping."""
-import csv,json,os
-from datetime import datetime, timezone
-from pathlib import Path
-from engine import evaluate
-BASE=Path(__file__).resolve().parent
-INPUT=BASE/'inputs'/'quotes.csv'
-DEST=BASE/'docs'/'data'/'latest.json'
 
-def run():
-    rows=[]
-    if INPUT.exists():
-        with INPUT.open(encoding='utf-8-sig',newline='') as fh:
-            reader=csv.DictReader(fh)
-            needed={'sport','event','market','line','outcome','bookmaker','odds','source','observed_at','role'}
-            if not needed.issubset(reader.fieldnames or ()):
-                raise ValueError('CSV måste innehålla: '+', '.join(sorted(needed)))
-            rows=list(reader)[:50000]
-    offers=evaluate(rows)
-    reviewed=[r for r in offers if r['decision']=='GRANSKA']
-    now=datetime.now(timezone.utc).isoformat(timespec='seconds')
-    discussion=[
-        {'agent':'ATLAS','text':f'Analyserade {len(offers)} aktiva erbjudna odds från importerade källor. {len(reviewed)} preliminära prisavvikelser för granskning.','ts':now},
-        {'agent':'QUANT','text':'Inga verifierade spelrekommendationer: prisavvikelse är inte bevisad modellfördel. Kräver oberoende kalibrering, jämförbara marknadsregler och framåttest.','ts':now},
-    ]
-    # Public website must not expose licensed raw datasets, credentials or private analysis history.
-    result={'generated_at':now,'mode':'REGELBASERAD ANALYS','live':False,'data_kind':'IMPORTED_CSV' if rows else 'NO_SOURCE',
-            'input_rows':len(rows),'offer_count':len(offers),'reviewed_count':len(reviewed),
-            'results':offers[:200],'discussion':discussion,
-            'notice':'Preliminära forskningskandidater, inte verifierat lönsamma speltips. Inga spel placeras.'}
-    DEST.parent.mkdir(parents=True,exist_ok=True)
-    DEST.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps({'offer_count':len(offers),'reviewed_count':len(reviewed)}))
+"""Hämtar odds från The Odds API utan att exponera nyckeln."""
+import json
+import os
+import urllib.parse
+import urllib.request
 
-if __name__=='__main__':run()
+def fetch_quotes():
+    key = os.getenv("ODDS_API_KEY", "").strip()
+    if not key:
+        return [], "NO_SOURCE"
+
+    params = urllib.parse.urlencode({
+        "apiKey": key,
+        "regions": "eu",
+        "markets": "h2h",
+        "oddsFormat": "decimal",
+    })
+    url = (
+        "https://api.the-odds-api.com/v4/"
+        "sports/soccer_epl/odds/?" + params
+    )
+
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "ValueDuo/1.0"}
+    )
+    with urllib.request.urlopen(req, timeout=25) as response:
+        events = json.load(response)
+        remaining = response.headers.get(
+            "x-requests-remaining", "unknown"
+        )
+
+    rows = []
+    for event in events:
+        home = event.get("home_team")
+        away = event.get("away_team")
+        if not home or not away:
+            continue
+
+        for book in event.get("bookmakers", []):
+            source = book.get("key")
+            if not source:
+                continue
+
+            for market in book.get("markets", []):
+                if market.get("key") != "h2h":
+                    continue
+
+                outcomes = market.get("outcomes", [])
+                names = {o.get("name") for o in outcomes}
+                if not {home, away}.issubset(names):
+                    continue
+                if len(names) != len(outcomes):
+                    continue
+
+                updated = market.get("last_update")
+                if not updated:
+                    continue
+
+                for outcome in outcomes:
+                    for role in ("offer", "reference"):
+                        rows.append({
+                            "sport": "soccer_epl",
+                            "event": event["id"],
+                            "market": "h2h",
+                            "line": "full_time",
+                            "outcome": outcome["name"],
+                            "bookmaker": source,
+                            "source": source,
+                            "odds": outcome["price"],
+                            "observed_at": updated,
+                            "role": role,
+                        })
+
+    print("API credits remaining:", remaining)
+    return rows, "API_ODDS"

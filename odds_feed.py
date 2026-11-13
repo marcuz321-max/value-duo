@@ -55,6 +55,7 @@ def fetch_quotes():
         home = event.get("home_team")
         away = event.get("away_team")
         event_id = event.get("id")
+        commence_time = event.get("commence_time")
 
         if not home or not away or not event_id:
             continue
@@ -93,6 +94,9 @@ def fetch_quotes():
                         rows.append({
                             "sport": sport,
                             "event": event_id,
+                            "home_team": home,
+                            "away_team": away,
+                            "commence_time": commence_time,
                             "market": "h2h",
                             "line": "full_time",
                             "outcome": outcome["name"],

@@ -73,10 +73,15 @@ def fetch_quotes():
                 outcomes = market.get("outcomes", [])
                 names = [o.get("name") for o in outcomes]
 
-                if (
-                    len(names) != len(set(names))
-                    or not {home, away}.issubset(set(names))
-                ):
+                if len(names) != len(set(names)):
+                    continue
+
+                if sport == "soccer_epl":
+                    expected = {home, away, "Draw"}
+                else:
+                    expected = {home, away}
+
+                if set(names) != expected:
                     continue
 
                 updated = market.get("last_update")
@@ -97,6 +102,11 @@ def fetch_quotes():
                             "home_team": home,
                             "away_team": away,
                             "commence_time": commence_time,
+                            "settlement_rules": (
+                                "including_overtime"
+                                if sport == "icehockey_nhl"
+                                else None
+                            ),
                             "market": "h2h",
                             "line": "full_time",
                             "outcome": outcome["name"],

@@ -1,4 +1,5 @@
-
+env:
+  ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 name: Value Duo - Automatisk analys
 
 on:

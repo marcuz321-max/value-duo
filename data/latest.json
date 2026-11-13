@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T00:46:31+00:00",
+  "generated_at": "2026-11-13T01:20:15+00:00",
   "mode": "REGELBASERAD ANALYS",
   "live": false,
   "data_kind": "NO_SOURCE",
@@ -11,12 +11,12 @@
     {
       "agent": "ATLAS",
       "text": "Analyserade 0 aktiva erbjudna odds från importerade källor. 0 preliminära prisavvikelser för granskning.",
-      "ts": "2026-11-13T00:46:31+00:00"
+      "ts": "2026-11-13T01:20:15+00:00"
     },
     {
       "agent": "QUANT",
       "text": "Inga verifierade spelrekommendationer: prisavvikelse är inte bevisad modellfördel. Kräver oberoende kalibrering, jämförbara marknadsregler och framåttest.",
-      "ts": "2026-11-13T00:46:31+00:00"
+      "ts": "2026-11-13T01:20:15+00:00"
     }
   ],
   "notice": "Preliminära forskningskandidater, inte verifierat lönsamma speltips. Inga spel placeras."

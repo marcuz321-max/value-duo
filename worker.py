@@ -6,6 +6,7 @@ from pathlib import Path
 
 from engine import evaluate
 from odds_feed import fetch_quotes
+from paper_tracker import register_candidates, load_bets, calculate_roi
 
 DATA = Path("data")
 LATEST = DATA / "latest.json"
@@ -46,6 +47,9 @@ def run():
         key=lambda x: x.get("ev") or 0,
         reverse=True
     )[:5]
+        # Registrera preliminära kandidater för uppföljning.
+    newly_registered = register_candidates(candidates)
+    paper_stats = calculate_roi(load_bets())
 
     discussion = [
         {
@@ -140,6 +144,10 @@ def run():
         "results": offers[:100],
         "discussion": discussion,
         "history_count": len(history),
+                "paper_tracking": {
+            "new_candidates": newly_registered,
+            **paper_stats,
+        },
         "notice": (
             "Preliminära prisjämförelser, inte verifierade "
             "speltips. Ingen historisk ROI är fastställd."

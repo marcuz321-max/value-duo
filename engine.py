@@ -21,6 +21,11 @@ def evaluate(rows, now=None, max_age_min=30, min_ev=.03, max_disagreement=.10):
             if any(not r.get(k) for k in required):continue
             t=ts(r['observed_at'])
             if t is None or not (-5 <= (now-t).total_seconds()/60 <= max_age_min):continue
+            start = ts(r.get('commence_time'))
+            if start is None or start <= now:
+                continue
+            if t > start:
+                continue
             key=tuple(r[k].casefold() for k in ('sport','event','market','line'))
             groups.setdefault(key,[]).append(r)
         except (KeyError,ValueError,TypeError):pass
@@ -41,6 +46,9 @@ def evaluate(rows, now=None, max_age_min=30, min_ev=.03, max_disagreement=.10):
         # References must have exactly identical outcome sets for this market.
         for q in (x for x in quotes if x['role']=='offer'):
             result={k:q[k] for k in ('sport','event','market','line','outcome','bookmaker','source','observed_at')}
+            result['home_team'] = q.get('home_team')
+            result['away_team'] = q.get('away_team')
+            result['commence_time'] = q.get('commence_time')
             result.update(odds=q['odds'],prob=None,fair=None,ev=None,decision='AVSTÅ',reason='För få tillförlitliga referensmarknader',reference_sources=[])
             target=q['outcome'].casefold()
             pool=[(s,p) for s,p in distributions.items() if s!=q['source'] and target in p]

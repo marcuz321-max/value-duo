@@ -1,0 +1,42 @@
+
+name: Value Duo - Automatisk analys
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7,37 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: value-duo-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hamta projektet
+        uses: actions/checkout@v4
+
+      - name: Installera Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Kor ATLAS och QUANT
+        run: python worker.py
+
+      - name: Publicera analysresultat
+        run: |
+          mkdir -p data
+          cp docs/data/latest.json data/latest.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Uppdatera Value Duo analys"
+            git push
+          fi

@@ -39,6 +39,28 @@ def register_candidates(candidates, stake=100):
     for item in candidates:
         if item.get("decision") != "GRANSKA":
             continue
+        start_text = item.get("commence_time")
+        observed_text = item.get("observed_at")
+
+        try:
+            start = datetime.fromisoformat(
+                str(start_text).replace("Z", "+00:00")
+            )
+            observed = datetime.fromisoformat(
+                str(observed_text).replace("Z", "+00:00")
+            )
+        except (ValueError, TypeError):
+            continue
+
+        now = datetime.now(timezone.utc)
+
+        if (
+            start.tzinfo is None
+            or observed.tzinfo is None
+            or start <= now
+            or observed > start
+        ):
+            continue
 
         key = (
             item["event"], item["market"], item["line"],
@@ -56,6 +78,9 @@ def register_candidates(candidates, stake=100):
         bets.append({
             "sport": item["sport"],
             "event": item["event"],
+            "home_team": item.get("home_team"),
+            "away_team": item.get("away_team"),
+            "commence_time": item.get("commence_time"),
             "market": item["market"],
             "line": item["line"],
             "outcome": item["outcome"],

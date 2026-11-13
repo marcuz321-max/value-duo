@@ -1,76 +1,67 @@
 
-"""Hämtar odds från The Odds API utan att exponera nyckeln."""
+
+"""Value Duo: schemalagd oddsanalys."""
 import json
-import os
-import urllib.parse
-import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
 
-def fetch_quotes():
-    key = os.getenv("ODDS_API_KEY", "").strip()
-    if not key:
-        return [], "NO_SOURCE"
+from engine import evaluate
+from odds_feed import fetch_quotes
 
-    params = urllib.parse.urlencode({
-        "apiKey": key,
-        "regions": "eu",
-        "markets": "h2h",
-        "oddsFormat": "decimal",
-    })
-    url = (
-        "https://api.the-odds-api.com/v4/"
-        "sports/soccer_epl/odds/?" + params
+def run():
+    rows, source = fetch_quotes()
+    offers = evaluate(rows)
+    reviewed = [
+        item for item in offers
+        if item["decision"] == "GRANSKA"
+    ]
+
+    now = datetime.now(timezone.utc).isoformat(
+        timespec="seconds"
     )
 
-    req = urllib.request.Request(
-        url, headers={"User-Agent": "ValueDuo/1.0"}
+    result = {
+        "generated_at": now,
+        "mode": "REGELBASERAD ANALYS",
+        "live": bool(rows),
+        "data_kind": source,
+        "input_rows": len(rows),
+        "offer_count": len(offers),
+        "reviewed_count": len(reviewed),
+        "results": offers[:100],
+        "discussion": [
+            {
+                "agent": "ATLAS",
+                "text": (
+                    f"Analyserade {len(offers)} erbjudna odds. "
+                    f"{len(reviewed)} preliminära "
+                    "prisavvikelser för granskning."
+                ),
+                "ts": now,
+            },
+            {
+                "agent": "QUANT",
+                "text": (
+                    "Prisjämförelser är inte bevisad "
+                    "modellfördel. Ingen verifierad ROI. "
+                    "Prospektiv testning krävs."
+                ),
+                "ts": now,
+            },
+        ],
+        "notice": (
+            "Preliminära forskningskandidater. "
+            "Ingen garanterad avkastning."
+        ),
+    }
+
+    path = Path("data/latest.json")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2),
+        encoding="utf-8",
     )
-    with urllib.request.urlopen(req, timeout=25) as response:
-        events = json.load(response)
-        remaining = response.headers.get(
-            "x-requests-remaining", "unknown"
-        )
+    print("Odds:", len(rows), "Kandidater:", len(reviewed))
 
-    rows = []
-    for event in events:
-        home = event.get("home_team")
-        away = event.get("away_team")
-        if not home or not away:
-            continue
-
-        for book in event.get("bookmakers", []):
-            source = book.get("key")
-            if not source:
-                continue
-
-            for market in book.get("markets", []):
-                if market.get("key") != "h2h":
-                    continue
-
-                outcomes = market.get("outcomes", [])
-                names = {o.get("name") for o in outcomes}
-                if not {home, away}.issubset(names):
-                    continue
-                if len(names) != len(outcomes):
-                    continue
-
-                updated = market.get("last_update")
-                if not updated:
-                    continue
-
-                for outcome in outcomes:
-                    for role in ("offer", "reference"):
-                        rows.append({
-                            "sport": "soccer_epl",
-                            "event": event["id"],
-                            "market": "h2h",
-                            "line": "full_time",
-                            "outcome": outcome["name"],
-                            "bookmaker": source,
-                            "source": source,
-                            "odds": outcome["price"],
-                            "observed_at": updated,
-                            "role": role,
-                        })
-
-    print("API credits remaining:", remaining)
-    return rows, "API_ODDS"
+if __name__ == "__main__":
+    run()

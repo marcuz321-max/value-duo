@@ -6,6 +6,7 @@ from pathlib import Path
 
 from engine import evaluate
 from odds_feed import fetch_quotes
+from score_settler import settle_pending
 from paper_tracker import register_candidates, load_bets, calculate_roi
 
 DATA = Path("data")
@@ -50,7 +51,16 @@ def run():
 
     # Registrera preliminära kandidater för uppföljning.
     newly_registered = register_candidates(candidates)
+
+    # Kontrollera slutresultat en gång per dag.
+    # Ordinarie körningar sker 08:17 och 20:17 UTC.
+    if datetime.now(timezone.utc).hour < 12:
+        settled_now = settle_pending()
+    else:
+        settled_now = 0
+
     paper_stats = calculate_roi(load_bets())
+
 
     discussion = [
         {
@@ -147,6 +157,7 @@ def run():
         "history_count": len(history),
         "paper_tracking": {
             "new_candidates": newly_registered,
+            "settled_this_run": settled_now,
             **paper_stats,
         },
         "notice": (

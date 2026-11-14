@@ -73,5 +73,23 @@
     "stake": 100,
     "status": "PENDING",
     "profit": null
+  },
+  {
+    "sport": "icehockey_nhl",
+    "event": "ccdee466b63a2accb1d804d5ca9e4bdc",
+    "home_team": "Carolina Hurricanes",
+    "away_team": "Seattle Kraken",
+    "commence_time": "2026-11-14T18:00:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Seattle Kraken",
+    "bookmaker": "matchbook",
+    "odds": 4.6,
+    "estimated_ev": 7.51,
+    "observed_at": "2026-11-14T09:03:08Z",
+    "registered_at": "2026-11-14T09:03:16+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
   }
 ]

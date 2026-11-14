@@ -16,5 +16,14 @@
     "input_rows": 828,
     "offer_count": 414,
     "reviewed_count": 8
+  },
+  {
+    "generated_at": "2026-11-14T09:03:15+00:00",
+    "sports": [
+      "icehockey_nhl"
+    ],
+    "input_rows": 616,
+    "offer_count": 308,
+    "reviewed_count": 1
   }
 ]

@@ -143,8 +143,20 @@
     "observed_at": "2026-11-14T20:53:54Z",
     "registered_at": "2026-11-14T20:54:10+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Tennessee Titans",
+        "score": "23"
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "score": "40"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -161,8 +173,20 @@
     "observed_at": "2026-11-14T20:54:09Z",
     "registered_at": "2026-11-14T20:54:10+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Tennessee Titans",
+        "score": "23"
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "score": "40"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -287,8 +311,20 @@
     "observed_at": "2026-11-15T20:54:20Z",
     "registered_at": "2026-11-15T20:54:28+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Utah Jazz",
+        "score": "102"
+      },
+      {
+        "name": "San Antonio Spurs",
+        "score": "110"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -305,8 +341,20 @@
     "observed_at": "2026-11-15T20:54:20Z",
     "registered_at": "2026-11-15T20:54:28+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Utah Jazz",
+        "score": "102"
+      },
+      {
+        "name": "San Antonio Spurs",
+        "score": "110"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -323,8 +371,20 @@
     "observed_at": "2026-11-15T20:54:20Z",
     "registered_at": "2026-11-15T20:54:28+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Sacramento Kings",
+        "score": "103"
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "score": "125"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -341,8 +401,20 @@
     "observed_at": "2026-11-15T20:54:20Z",
     "registered_at": "2026-11-15T20:54:28+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Sacramento Kings",
+        "score": "103"
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "score": "125"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -359,7 +431,19 @@
     "observed_at": "2026-11-15T20:54:20Z",
     "registered_at": "2026-11-15T20:54:28+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-16T10:19:39+00:00",
+    "final_scores": [
+      {
+        "name": "Washington Wizards",
+        "score": "119"
+      },
+      {
+        "name": "Houston Rockets",
+        "score": "147"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   }
 ]

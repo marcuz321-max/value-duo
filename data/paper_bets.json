@@ -535,5 +535,41 @@
     "stake": 100,
     "status": "PENDING",
     "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "6ef39b0fd8839f6e93a3de32523e9807",
+    "home_team": "Manchester City",
+    "away_team": "Fulham",
+    "commence_time": "2026-11-21T12:30:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Draw",
+    "bookmaker": "betfair_ex_eu",
+    "odds": 5.6,
+    "estimated_ev": 4.11,
+    "observed_at": "2026-11-17T09:20:07Z",
+    "registered_at": "2026-11-17T09:20:22+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "ac6cf70520a83c0949b4003bde53c709",
+    "home_team": "Chelsea",
+    "away_team": "Leeds United",
+    "commence_time": "2026-11-21T15:00:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Leeds United",
+    "bookmaker": "unibet_se",
+    "odds": 4.4,
+    "estimated_ev": 4.05,
+    "observed_at": "2026-11-17T09:19:38Z",
+    "registered_at": "2026-11-17T09:20:22+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
   }
 ]

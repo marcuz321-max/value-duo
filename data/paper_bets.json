@@ -587,8 +587,20 @@
     "observed_at": "2026-11-17T21:07:59Z",
     "registered_at": "2026-11-17T21:07:59+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 370.0,
+    "settled_at": "2026-11-18T09:20:29+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "93"
+      },
+      {
+        "name": "Detroit Pistons",
+        "score": "105"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -605,8 +617,20 @@
     "observed_at": "2026-11-17T21:07:15Z",
     "registered_at": "2026-11-17T21:07:59+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 360.0,
+    "settled_at": "2026-11-18T09:20:29+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "93"
+      },
+      {
+        "name": "Detroit Pistons",
+        "score": "105"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -623,7 +647,19 @@
     "observed_at": "2026-11-17T21:07:59Z",
     "registered_at": "2026-11-17T21:07:59+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 360.0,
+    "settled_at": "2026-11-18T09:20:29+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "93"
+      },
+      {
+        "name": "Detroit Pistons",
+        "score": "105"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   }
 ]

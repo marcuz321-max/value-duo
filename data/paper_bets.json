@@ -751,5 +751,23 @@
     "stake": 100,
     "status": "PENDING",
     "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "6ef39b0fd8839f6e93a3de32523e9807",
+    "home_team": "Manchester City",
+    "away_team": "Fulham",
+    "commence_time": "2026-11-21T12:30:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Fulham",
+    "bookmaker": "matchbook",
+    "odds": 8.0,
+    "estimated_ev": 8.87,
+    "observed_at": "2026-11-19T09:24:32Z",
+    "registered_at": "2026-11-19T09:24:54+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
   }
 ]

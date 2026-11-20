@@ -785,8 +785,20 @@
     "observed_at": "2026-11-19T21:06:00Z",
     "registered_at": "2026-11-19T21:06:19+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-20T09:19:48+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "124"
+      },
+      {
+        "name": "Los Angeles Clippers",
+        "score": "112"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -803,8 +815,20 @@
     "observed_at": "2026-11-19T21:06:02Z",
     "registered_at": "2026-11-19T21:06:19+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-20T09:19:48+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "124"
+      },
+      {
+        "name": "Los Angeles Clippers",
+        "score": "112"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -821,8 +845,20 @@
     "observed_at": "2026-11-19T21:06:00Z",
     "registered_at": "2026-11-19T21:06:19+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-20T09:19:48+00:00",
+    "final_scores": [
+      {
+        "name": "Milwaukee Bucks",
+        "score": "114"
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "score": "124"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -839,8 +875,20 @@
     "observed_at": "2026-11-19T21:06:02Z",
     "registered_at": "2026-11-19T21:06:19+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-20T09:19:48+00:00",
+    "final_scores": [
+      {
+        "name": "Milwaukee Bucks",
+        "score": "114"
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "score": "124"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -857,7 +905,19 @@
     "observed_at": "2026-11-19T21:06:04Z",
     "registered_at": "2026-11-19T21:06:19+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-20T09:19:48+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "124"
+      },
+      {
+        "name": "Los Angeles Clippers",
+        "score": "112"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   }
 ]

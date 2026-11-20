@@ -919,5 +919,23 @@
       }
     ],
     "settlement_source": "THE_ODDS_API"
+  },
+  {
+    "sport": "americanfootball_nfl",
+    "event": "3ea90704fb576633bd1e2fa5aafd9ea3",
+    "home_team": "Chicago Bears",
+    "away_team": "New Orleans Saints",
+    "commence_time": "2026-11-22T18:00:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "New Orleans Saints",
+    "bookmaker": "betfair_ex_eu",
+    "odds": 6.4,
+    "estimated_ev": 8.65,
+    "observed_at": "2026-11-20T21:05:23Z",
+    "registered_at": "2026-11-20T21:05:49+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
   }
 ]

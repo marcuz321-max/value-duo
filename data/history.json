@@ -140,5 +140,14 @@
     "input_rows": 1568,
     "offer_count": 784,
     "reviewed_count": 13
+  },
+  {
+    "generated_at": "2026-11-21T09:02:20+00:00",
+    "sports": [
+      "soccer_epl"
+    ],
+    "input_rows": 2592,
+    "offer_count": 1296,
+    "reviewed_count": 25
   }
 ]

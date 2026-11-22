@@ -167,5 +167,14 @@
     "input_rows": 184,
     "offer_count": 92,
     "reviewed_count": 2
+  },
+  {
+    "generated_at": "2026-11-22T20:58:33+00:00",
+    "sports": [
+      "americanfootball_nfl"
+    ],
+    "input_rows": 644,
+    "offer_count": 234,
+    "reviewed_count": 5
   }
 ]

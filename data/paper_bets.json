@@ -221,8 +221,20 @@
     "observed_at": "2026-11-15T09:03:09Z",
     "registered_at": "2026-11-15T09:03:15+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      },
+      {
+        "name": "Ipswich Town",
+        "score": "0"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -239,8 +251,20 @@
     "observed_at": "2026-11-15T09:02:55Z",
     "registered_at": "2026-11-15T09:03:15+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      },
+      {
+        "name": "Ipswich Town",
+        "score": "0"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -275,8 +299,20 @@
     "observed_at": "2026-11-15T09:03:11Z",
     "registered_at": "2026-11-15T09:03:15+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Manchester City",
+        "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -293,8 +329,20 @@
     "observed_at": "2026-11-15T09:03:09Z",
     "registered_at": "2026-11-15T09:03:15+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Manchester City",
+        "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -551,8 +599,20 @@
     "observed_at": "2026-11-17T09:20:07Z",
     "registered_at": "2026-11-17T09:20:22+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 460.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Manchester City",
+        "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -569,8 +629,20 @@
     "observed_at": "2026-11-17T09:19:38Z",
     "registered_at": "2026-11-17T09:20:22+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 340.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Chelsea",
+        "score": "1"
+      },
+      {
+        "name": "Leeds United",
+        "score": "4"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -767,8 +839,20 @@
     "observed_at": "2026-11-19T09:24:32Z",
     "registered_at": "2026-11-19T09:24:54+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Manchester City",
+        "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -989,8 +1073,20 @@
     "observed_at": "2026-11-21T20:56:42Z",
     "registered_at": "2026-11-21T20:56:57+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "114"
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "score": "91"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1007,8 +1103,20 @@
     "observed_at": "2026-11-21T20:56:33Z",
     "registered_at": "2026-11-21T20:56:57+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "114"
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "score": "91"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1025,8 +1133,20 @@
     "observed_at": "2026-11-21T20:44:31Z",
     "registered_at": "2026-11-21T20:56:57+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 575.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Sacramento Kings",
+        "score": "97"
+      },
+      {
+        "name": "Boston Celtics",
+        "score": "96"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1043,8 +1163,20 @@
     "observed_at": "2026-11-21T20:56:14Z",
     "registered_at": "2026-11-21T20:56:57+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "San Antonio Spurs",
+        "score": "114"
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "score": "91"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1060,6 +1192,54 @@
     "estimated_ev": 13.17,
     "observed_at": "2026-11-21T20:47:05Z",
     "registered_at": "2026-11-21T20:56:57+00:00",
+    "stake": 100,
+    "status": "WIN",
+    "profit": 561.0,
+    "settled_at": "2026-11-22T09:02:36+00:00",
+    "final_scores": [
+      {
+        "name": "Sacramento Kings",
+        "score": "97"
+      },
+      {
+        "name": "Boston Celtics",
+        "score": "96"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
+  },
+  {
+    "sport": "icehockey_nhl",
+    "event": "d58a81d96dc96c937a865548f3a1a7c5",
+    "home_team": "Dallas Stars",
+    "away_team": "Pittsburgh Penguins",
+    "commence_time": "2026-11-23T00:10:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Pittsburgh Penguins",
+    "bookmaker": "matchbook",
+    "odds": 3.1,
+    "estimated_ev": 4.96,
+    "observed_at": "2026-11-22T09:02:30Z",
+    "registered_at": "2026-11-22T09:02:36+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
+  },
+  {
+    "sport": "icehockey_nhl",
+    "event": "5a749c9d02c984e711e097f31a446542",
+    "home_team": "Tampa Bay Lightning",
+    "away_team": "Buffalo Sabres",
+    "commence_time": "2026-11-22T22:10:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Buffalo Sabres",
+    "bookmaker": "matchbook",
+    "odds": 2.92,
+    "estimated_ev": 4.37,
+    "observed_at": "2026-11-22T09:02:30Z",
+    "registered_at": "2026-11-22T09:02:36+00:00",
     "stake": 100,
     "status": "PENDING",
     "profit": null

@@ -185,5 +185,14 @@
     "input_rows": 2628,
     "offer_count": 1314,
     "reviewed_count": 13
+  },
+  {
+    "generated_at": "2026-11-23T21:06:30+00:00",
+    "sports": [
+      "basketball_nba"
+    ],
+    "input_rows": 1000,
+    "offer_count": 500,
+    "reviewed_count": 18
   }
 ]

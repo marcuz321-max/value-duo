@@ -107,8 +107,20 @@
     "observed_at": "2026-11-14T20:53:17Z",
     "registered_at": "2026-11-14T20:54:10+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Kansas City Chiefs",
+        "score": "34"
+      },
+      {
+        "name": "Arizona Cardinals",
+        "score": "7"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -125,8 +137,20 @@
     "observed_at": "2026-11-14T20:53:33Z",
     "registered_at": "2026-11-14T20:54:10+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Kansas City Chiefs",
+        "score": "34"
+      },
+      {
+        "name": "Arizona Cardinals",
+        "score": "7"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -203,8 +227,20 @@
     "observed_at": "2026-11-14T20:52:14Z",
     "registered_at": "2026-11-14T20:54:10+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Kansas City Chiefs",
+        "score": "34"
+      },
+      {
+        "name": "Arizona Cardinals",
+        "score": "7"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -281,8 +317,20 @@
     "observed_at": "2026-11-15T09:03:09Z",
     "registered_at": "2026-11-15T09:03:15+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 560.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Hull City",
+        "score": "2"
+      },
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "0"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -509,8 +557,20 @@
     "observed_at": "2026-11-16T21:03:47Z",
     "registered_at": "2026-11-16T21:03:51+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Dallas Cowboys",
+        "score": "51"
+      },
+      {
+        "name": "Tennessee Titans",
+        "score": "30"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -527,8 +587,20 @@
     "observed_at": "2026-11-16T21:03:32Z",
     "registered_at": "2026-11-16T21:03:51+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Dallas Cowboys",
+        "score": "51"
+      },
+      {
+        "name": "Tennessee Titans",
+        "score": "30"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -545,8 +617,20 @@
     "observed_at": "2026-11-16T21:03:17Z",
     "registered_at": "2026-11-16T21:03:51+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Dallas Cowboys",
+        "score": "51"
+      },
+      {
+        "name": "Tennessee Titans",
+        "score": "30"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -563,8 +647,20 @@
     "observed_at": "2026-11-16T21:03:47Z",
     "registered_at": "2026-11-16T21:03:51+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Chicago Bears",
+        "score": "21"
+      },
+      {
+        "name": "New Orleans Saints",
+        "score": "13"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -581,8 +677,20 @@
     "observed_at": "2026-11-16T21:03:32Z",
     "registered_at": "2026-11-16T21:03:51+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Chicago Bears",
+        "score": "21"
+      },
+      {
+        "name": "New Orleans Saints",
+        "score": "13"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -749,8 +857,20 @@
     "observed_at": "2026-11-18T21:08:05Z",
     "registered_at": "2026-11-18T21:08:39+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Buffalo Bills",
+        "score": "26"
+      },
+      {
+        "name": "Miami Dolphins",
+        "score": "9"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -767,8 +887,20 @@
     "observed_at": "2026-11-18T21:08:22Z",
     "registered_at": "2026-11-18T21:08:39+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Kansas City Chiefs",
+        "score": "34"
+      },
+      {
+        "name": "Arizona Cardinals",
+        "score": "7"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -785,8 +917,20 @@
     "observed_at": "2026-11-18T21:08:05Z",
     "registered_at": "2026-11-18T21:08:39+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Kansas City Chiefs",
+        "score": "34"
+      },
+      {
+        "name": "Arizona Cardinals",
+        "score": "7"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -803,8 +947,20 @@
     "observed_at": "2026-11-18T21:08:22Z",
     "registered_at": "2026-11-18T21:08:39+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Buffalo Bills",
+        "score": "26"
+      },
+      {
+        "name": "Miami Dolphins",
+        "score": "9"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -1019,8 +1175,20 @@
     "observed_at": "2026-11-20T21:05:23Z",
     "registered_at": "2026-11-20T21:05:49+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Chicago Bears",
+        "score": "21"
+      },
+      {
+        "name": "New Orleans Saints",
+        "score": "13"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -1037,8 +1205,20 @@
     "observed_at": "2026-11-21T09:01:51Z",
     "registered_at": "2026-11-21T09:02:21+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Liverpool",
+        "score": "4"
+      },
+      {
+        "name": "Manchester United",
+        "score": "0"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "soccer_epl",
@@ -1055,8 +1235,20 @@
     "observed_at": "2026-11-21T09:01:50Z",
     "registered_at": "2026-11-21T09:02:21+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Liverpool",
+        "score": "4"
+      },
+      {
+        "name": "Manchester United",
+        "score": "0"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1259,8 +1451,20 @@
     "observed_at": "2026-11-22T20:56:50Z",
     "registered_at": "2026-11-22T20:58:34+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Denver Broncos",
+        "score": "38"
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "score": "24"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -1277,8 +1481,20 @@
     "observed_at": "2026-11-22T20:57:05Z",
     "registered_at": "2026-11-22T20:58:34+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 260.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "New York Giants",
+        "score": "23"
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "score": "18"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -1295,8 +1511,20 @@
     "observed_at": "2026-11-22T20:58:18Z",
     "registered_at": "2026-11-22T20:58:34+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "WIN",
+    "profit": 255.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "New York Giants",
+        "score": "23"
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "score": "18"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -1313,8 +1541,20 @@
     "observed_at": "2026-11-22T20:58:18Z",
     "registered_at": "2026-11-22T20:58:34+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Denver Broncos",
+        "score": "38"
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "score": "24"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "americanfootball_nfl",
@@ -1330,6 +1570,108 @@
     "estimated_ev": 3.91,
     "observed_at": "2026-11-22T20:58:20Z",
     "registered_at": "2026-11-22T20:58:34+00:00",
+    "stake": 100,
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-23T09:40:16+00:00",
+    "final_scores": [
+      {
+        "name": "Denver Broncos",
+        "score": "38"
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "score": "24"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "9629fcc970336d106d144eaa25cec853",
+    "home_team": "Liverpool",
+    "away_team": "Sunderland",
+    "commence_time": "2026-12-02T19:30:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Sunderland",
+    "bookmaker": "onexbet",
+    "odds": 6.83,
+    "estimated_ev": 7.92,
+    "observed_at": "2026-11-23T09:39:18Z",
+    "registered_at": "2026-11-23T09:40:16+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "0bc17a3c7d8153e72b94688960cc603a",
+    "home_team": "Leeds United",
+    "away_team": "Coventry City",
+    "commence_time": "2026-11-28T15:00:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Coventry City",
+    "bookmaker": "betfair_ex_eu",
+    "odds": 6.6,
+    "estimated_ev": 7.83,
+    "observed_at": "2026-11-23T09:40:00Z",
+    "registered_at": "2026-11-23T09:40:16+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "0bc17a3c7d8153e72b94688960cc603a",
+    "home_team": "Leeds United",
+    "away_team": "Coventry City",
+    "commence_time": "2026-11-28T15:00:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Coventry City",
+    "bookmaker": "matchbook",
+    "odds": 6.6,
+    "estimated_ev": 7.83,
+    "observed_at": "2026-11-23T09:39:59Z",
+    "registered_at": "2026-11-23T09:40:16+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "9629fcc970336d106d144eaa25cec853",
+    "home_team": "Liverpool",
+    "away_team": "Sunderland",
+    "commence_time": "2026-12-02T19:30:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Sunderland",
+    "bookmaker": "marathonbet",
+    "odds": 6.65,
+    "estimated_ev": 5.07,
+    "observed_at": "2026-11-23T09:39:36Z",
+    "registered_at": "2026-11-23T09:40:16+00:00",
+    "stake": 100,
+    "status": "PENDING",
+    "profit": null
+  },
+  {
+    "sport": "soccer_epl",
+    "event": "9629fcc970336d106d144eaa25cec853",
+    "home_team": "Liverpool",
+    "away_team": "Sunderland",
+    "commence_time": "2026-12-02T19:30:00Z",
+    "market": "h2h",
+    "line": "full_time",
+    "outcome": "Sunderland",
+    "bookmaker": "betsson",
+    "odds": 6.63,
+    "estimated_ev": 4.79,
+    "observed_at": "2026-11-23T09:39:18Z",
+    "registered_at": "2026-11-23T09:40:16+00:00",
     "stake": 100,
     "status": "PENDING",
     "profit": null

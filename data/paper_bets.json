@@ -1691,8 +1691,20 @@
     "observed_at": "2026-11-23T21:06:17Z",
     "registered_at": "2026-11-23T21:06:30+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-24T09:27:32+00:00",
+    "final_scores": [
+      {
+        "name": "Houston Rockets",
+        "score": "116"
+      },
+      {
+        "name": "Los Angeles Clippers",
+        "score": "104"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1709,8 +1721,20 @@
     "observed_at": "2026-11-23T21:06:18Z",
     "registered_at": "2026-11-23T21:06:30+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-24T09:27:32+00:00",
+    "final_scores": [
+      {
+        "name": "Houston Rockets",
+        "score": "116"
+      },
+      {
+        "name": "Los Angeles Clippers",
+        "score": "104"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1727,8 +1751,20 @@
     "observed_at": "2026-11-23T21:06:17Z",
     "registered_at": "2026-11-23T21:06:30+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-24T09:27:32+00:00",
+    "final_scores": [
+      {
+        "name": "Minnesota Timberwolves",
+        "score": "142"
+      },
+      {
+        "name": "Brooklyn Nets",
+        "score": "116"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1745,8 +1781,20 @@
     "observed_at": "2026-11-23T21:06:18Z",
     "registered_at": "2026-11-23T21:06:30+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-24T09:27:32+00:00",
+    "final_scores": [
+      {
+        "name": "Minnesota Timberwolves",
+        "score": "142"
+      },
+      {
+        "name": "Brooklyn Nets",
+        "score": "116"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   },
   {
     "sport": "basketball_nba",
@@ -1763,7 +1811,19 @@
     "observed_at": "2026-11-23T21:06:17Z",
     "registered_at": "2026-11-23T21:06:30+00:00",
     "stake": 100,
-    "status": "PENDING",
-    "profit": null
+    "status": "LOSS",
+    "profit": -100.0,
+    "settled_at": "2026-11-24T09:27:32+00:00",
+    "final_scores": [
+      {
+        "name": "Los Angeles Lakers",
+        "score": "109"
+      },
+      {
+        "name": "Utah Jazz",
+        "score": "94"
+      }
+    ],
+    "settlement_source": "THE_ODDS_API"
   }
 ]
